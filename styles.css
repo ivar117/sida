@@ -31,6 +31,7 @@ a {
 .links:hover { /* Definerar vad som händer med ett element med klassen links när man håller musen över den */
 	font-size: 18px; /* Ökar storleken med 1 pixel */
 	background-color: #32373B; /* Ändrar färgen marginellt */
+	transition: 0.2s;
 }
 
 nav { /* Stil på toolbaren längst upp */
@@ -52,7 +53,7 @@ nav { /* Stil på toolbaren längst upp */
 	border-width: 3px; /* Tjocklek på bordern */
 	border-color: #268bd2; /* Sätter färgen på bordern */
 
-	max-width: 900px; /* Maximal bredd på rutan */
+	max-width: 1000px; /* Maximal bredd på rutan */
 	margin: auto; /* Centrerar rutorna */
 	margin-bottom: 25px; /* Skapar mellanrum mellan indivuella rutor */
 	padding: 10px; /* Ökar mellanrummet inuti rutorna */
