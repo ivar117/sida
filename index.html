@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="sv">
-	<head> 
+	<head>  
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initia">
 		<link href="styles.css" rel="stylesheet" type="text/css" media="all"> <!--Länkar till stylesheet-->
@@ -17,14 +17,14 @@
 		<hr color="#268bd2" class="line"> <!--Linje längst ned vid toolbaren-->
 
 		<h1> 
-			<i id="FlipH" class="fa fa-bolt" style="color: #dce73bff"></i> <!--Blixt ikon-->
+			<i id="FlipH" class="fa fa-bolt" style="color: #dce73bff"></i> <!--Blixt som vänds horisontellt via FlipH id ifrån styles.css. -->
 				Roger Nilsson 
 				<i style="color: #dce73bff" class="fa fa-bolt"></i> <!--Blix ikon, horisontellt vänd åt andra hållet-->
 		</h1>
 
 		<h2><span style="font-weight:normal">Om mig</span></h2> <!--Style argumentet gör att headern inte är bold, vilket skapar en bra kontrast till <h1> ovan-->
 
-		<div class="ruta"> <!--Initialiserar en div med stilklassen "ruta" definerad i styles.css -->
+		<div class="ruta"> <!--Initialiserar en div med stilklassen "ruta" definerad i styles.css. Den skapar en fin ruta i mitten av sidan som innehåller texter och bilder.-->
 			<div class="image"> <!--Initialiserar en ny div inuti rutan som ändrar på hur en bild hanteras-->
 				<img src="images/portratt.jpg" width="270px">  <!--Lägger till ett porträtt på Roger-->
 			</div>
@@ -40,8 +40,8 @@
 				
 		<div class="ruta">
 			<div class="text">
-			<h2>Mina jobb erfarenheter</h2>
-			<p>Mitt första jobb var som nattvakt hos fredrik fasbjörns pizzeria från när jag var 18 år gammal. 
+				<h2>Mina jobb erfarenheter</h2>
+				<p>Mitt första jobb var som nattvakt hos fredrik fasbjörns pizzeria från när jag var 18 år gammal. 
 				Detta stod jag ej ut med och bara efter några månaders arbete där så sa jag upp mig. 
 				Sedan dess har jag mångårig erfarenhet med elinstallation och är vad jag exklusivt arbetat med. Jag har
 				jobbat delvis för <a href="https://www.vei.nu/">Västerås Elinstallation AB</a> 
@@ -57,21 +57,34 @@
 			</div>
 		</div>
 	
-		<div class="ruta">
-
+		<div class="ruta" style="margin-bottom: 70px"> <!--Eftersom det är sista rutan så lägger jag till lite mellanrum mellan slutet på rutan och löngst ned på sidan-->
 			<div class="image">
 				<img src="images/elektronik.jpg" width="180px">
 			</div>
 
 			<div class="text">
-			<h2>Mina kompetenser</h2>
-				<p>
-				Jag har har mycket arbetsglädje och kan jobba länge och flitigt.
-				Jag gillar att lösa problem, även om det inte är helt uppenbart hur det ska lösas från början. Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det. Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!
-				</p>
+				<h2>Mina kompetenser</h2>
+				<ul>
+					<li>
+						<p>Jag har har mycket arbetsglädje och kan jobba länge och flitigt.</p>
+					</li>
+					<li>
+						<p>Jag gillar att lösa problem även om det inte är helt uppenbart hur något ska gå till väga.</p>
+					</li>
+					<li>
+						<p>Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det.
+</p>
+					</li>
+					<li>
+						<p>Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!
+</p>
+					</li>
+				</ul>
+				<!--<p>-->
+				<!--Jag har har mycket arbetsglädje och kan jobba länge och flitigt.-->
+				<!--Jag gillar att lösa problem även om det inte är helt uppenbart hur något ska gå till väga. Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det. Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!-->
+				<!--</p>-->
 			</div>
-
 		</div>
-
 	</body>
 </html>

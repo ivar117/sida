@@ -46,7 +46,7 @@ nav { /* Stil på toolbaren längst upp */
 
 .ruta { /* stilen på rutorna där texten finns */
 	background-color: #1d1f21; /* Sätter bakgrundsfärg */
-	display: flex; /* Initialiserar flexbox */
+	display: flex; /* Initialiserar flex */
 
 	border-style: solid; /* Initialiserar en vanlig border */
 	border-radius: 10px; /* Rundade hörn */
@@ -76,6 +76,12 @@ img {
 	border-radius: 12px /* Rundade hörn på bilder */
 }
 
+/*ul {*/
+	/*list-style-type:none;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+/*}*/
+
 #FlipH { /* Spegla något horisontellt */
 	/*-moz-transform: scale(-1, 1);*/
 	/*-webkit-transform: scale(-1, 1);*/
@@ -84,8 +90,22 @@ img {
 	transform: scale(-1, 1);
 }
 
+.altruta {
+	background-color: #1d1f21; /* Sätter bakgrundsfärg */
+
+	border-style: solid; /* Initialiserar en vanlig border */
+	border-radius: 10px; /* Rundade hörn */
+	border-width: 3px; /* Tjocklek på bordern */
+	border-color: #268bd2; /* Sätter färgen på bordern */
+
+	max-width: 1000px; /* Maximal bredd på rutan */
+	margin: auto; /* Centrerar rutorna */
+	margin-bottom: 25px; /* Skapar mellanrum mellan indivuella rutor */
+	padding: 10px; /* Ökar mellanrummet inuti rutorna */
+}
+
 .container {
-  display: flex;
+	display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: left;
 }
