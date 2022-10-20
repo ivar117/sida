@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="sv">
 	<head>  
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initia">
-		<link href="styles.css" rel="stylesheet" type="text/css" media="all"> <!--Länkar till stylesheet-->
+		<meta name="viewport" content="width=device-width, initia"> <!--Sätter width till samma som användarens enhet-->
+		<link href="styles.css" rel="stylesheet" type="text/css" media="all"> <!--Länkar till css stylesheet-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Sourcar fontawesome ikoner-->
 		<title>Om mig</title> <!--Sätter titeln (annars hade dokumentet hetat index.html)-->
 	</head>
 	<body>
 
-		<nav> <!--Navigations toolbaren längst upp, som länkar till olika delar av min sida-->
+		<nav> <!--Navigations toolbaren längst upp, som länkar till olika delar sidan. Stilen på den är definerad i styles.css-->
 			<a class="links" href="tjanster.html">Tjänster</a>
 			<a class="links" href="index.html">Om mig</a>
 			<a class="links" href="kontakt.html">Kontakta mig</a>
 		</nav>
-		<hr color="#268bd2" class="line"> <!--Linje längst ned vid toolbaren-->
+		<hr color="#268bd2" class="line"> <!--Horisontell linje längst ned vid toolbaren-->
 
 		<h1> 
-			<i id="FlipH" class="fa fa-bolt" style="color: #dce73bff"></i> <!--Blixt som vänds horisontellt via FlipH id ifrån styles.css. -->
+			<i id="FlipH" class="fa fa-bolt" style="color: #dce73bff"></i> <!--Blixt ikon som vänds horisontellt via FlipH id ifrån styles.css. I FlipH finns en css transform tag som kan manipulera riktning på ett element, vertikalt och horisontellt-->
 				Roger Nilsson 
-				<i style="color: #dce73bff" class="fa fa-bolt"></i> <!--Blix ikon, horisontellt vänd åt andra hållet-->
+			<i style="color: #dce73bff" class="fa fa-bolt"></i> <!--Blix ikon, horisontellt vänd åt motsats håll från den andra ikonen-->
 		</h1>
 
 		<h2><span style="font-weight:normal">Om mig</span></h2> <!--Style argumentet gör att headern inte är bold, vilket skapar en bra kontrast till <h1> ovan-->
 
-		<div class="ruta"> <!--Initialiserar en div med stilklassen "ruta" definerad i styles.css. Förutom att den skapar en fin ruta så intialiserar den flex för att få innehållet i rutorna att ligga snyggt placerat.-->
+		<div class="ruta"> <!--Initialiserar en div med stilklassen "ruta" definerad i styles.css. Förutom att den skapar en fin ruta med en border och annan färg så intialiserar den flex för att få innehållet i rutorna att ligga snyggt placerat.-->
 			<div class="image"> <!--Initialiserar en ny div inuti rutan som ändrar på hur en bild hanteras, specifikt skapar den mer mellanrum mellan bilden och resten av rutan.-->
 				<img src="images/portratt.jpg" width="270px">  <!--Lägger till ett porträtt på Roger-->
 			</div>
-			<div class="text"> <!--Startar en ny div med klassen text som skapar mer mellanrum till höger och vänster om texten-->
+			<div class="text"> <!--Startar en ny div med klassen text som lägger texten på rätt plats och skapar mer mellanrum till höger och vänster om texten-->
 				<h2>Min utbildning</h2>
 				<p>Jag gick tre år samhällsvetenskaplig inrikting på 
 				gymnasiet. Efteråt uppstod en vilja inom mig att 
@@ -43,8 +42,8 @@
 				<h2>Mina jobb erfarenheter</h2>
 				<p>Mitt första jobb var som nattvakt hos fredrik fasbjörns pizzeria från när jag var 18 år gammal. 
 				Detta stod jag ej ut med och bara efter några månaders arbete där så sa jag upp mig. 
-				Sedan dess har jag mångårig erfarenhet med elinstallation och är vad jag exklusivt arbetat med. Jag har
-				jobbat delvis för <a href="https://www.vei.nu/">Västerås Elinstallation AB</a> 
+				Sedan dess har jag mångårig erfarenhet med elinstallation och är vad jag exlusivt arbetat med. Jag har
+				jobbat delvis för företagen <a href="https://www.vei.nu/">Västerås Elinstallation AB</a> 
 				och <a href="https://www.ibcelinstallation.se/">IBC Elinstallation AB</a>.
 				Numera arbetar jag frilans, och kan ta an uppgifter av såväl företag
 				som privatpersoner. Ifall du är intresserad av att anlita 
@@ -72,18 +71,12 @@
 						<p>Jag gillar att lösa problem även om det inte är helt uppenbart hur något ska gå till väga.</p>
 					</li>
 					<li>
-						<p>Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det.
-</p>
+						<p>Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det.</p>
 					</li>
 					<li>
-						<p>Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!
-</p>
+						<p>Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!</p>
 					</li>
 				</ul>
-				<!--<p>-->
-				<!--Jag har har mycket arbetsglädje och kan jobba länge och flitigt.-->
-				<!--Jag gillar att lösa problem även om det inte är helt uppenbart hur något ska gå till väga. Jag ger inte upp lätt och kan jobba med en sak länge tills jag får till det. Jag är tålig och gillar inte att klaga, livet är inte alltid så lätt, men att klaga löser ingenting!-->
-				<!--</p>-->
 			</div>
 		</div>
 	</body>
