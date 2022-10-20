@@ -1,0 +1,90 @@
+@import url('https://code.cdn.mozilla.net/fonts/fira.css'); /* Sourcar fonten som jag använder */
+
+body {
+	font-family: 'Fira Sans', sans-serif; /* Sätter fonten */
+	color: white; /* Sätter standardfärgen på texten */
+	background-color: #2a2c2e; /* Sätter standardbakgrundsfärgen */
+	margin: 0px; /*Gör så att navigation toolbar:en längst upp inte innehåller white space */
+}
+
+h1, h2{
+	text-align: center; /* Centrerar h1 och h2 headers */
+}
+
+a {
+	color: white; /* Gör att färgen på länkar är vit */
+}
+
+.links { /* Stil på länkarna i min toolbar längst upp */
+	font-size: 17px;
+	background-color: #2a2c2e;
+	padding: 7px; /* Ökar mellanrummet mellan texten och rutans nedre respektive övre del */
+	padding-inline: 14px; /* Ökar mellanrummet mellan texten och rutans högra respektive vänstra del */
+	text-decoration: none; /* Inget undersryk i texten */
+	border-style: solid; /* Initialiserar en vanlig border */
+	border-radius: 8px; /* Skapar rundade hörn */
+	border-width: 2px; /* Tjockleken på bordern */
+	border-color: #268bd2; /* Färgen på bordern */
+	margin-left: 30px; /* Ökar mellanrummet mellan varje individuell länk */
+}
+
+.links:hover { /* Definerar vad som händer med ett element med klassen links när man håller musen över den */
+	font-size: 18px; /* Ökar storleken med 1 pixel */
+	background-color: #32373B; /* Ändrar färgen marginellt */
+}
+
+nav { /* Stil på toolbaren längst upp */
+	background: #1d1f21; /* Sätter bakgrundsfärgen */
+	text-align: center; /* Centrar allt i toolbaren */
+	padding: 22px; /* Ökar mellanrummet inuti toolbaren */
+}
+
+.line { /* Blåa linjen under toolbaren */
+	margin-top: 0px; /* Inget extra mellanrum mellan den blåa linjen och längst ned på toolbaren */ 
+}
+
+.ruta { /* stilen på rutorna där texten finns */
+	background-color: #1d1f21; /* Sätter bakgrundsfärg */
+	display: flex; /* Initialiserar flexbox */
+
+	border-style: solid; /* Initialiserar en vanlig border */
+	border-radius: 10px; /* Rundade hörn */
+	border-width: 3px; /* Tjocklek på bordern */
+	border-color: #268bd2; /* Sätter färgen på bordern */
+
+	max-width: 900px; /* Maximal bredd på rutan */
+	margin: auto; /* Centrerar rutorna */
+	margin-bottom: 25px; /* Skapar mellanrum mellan indivuella rutor */
+	padding: 10px; /* Ökar mellanrummet inuti rutorna */
+}
+
+.image {
+	padding: 17px; /* Skapar mellanrum mellan bilderna och kanterna på rutorna samt mellan andra komponenter i rutorna (som text) */
+}
+
+.text {
+	padding-inline: 20px; /* 20 pixels mellanrum ifrån högra och vänstra sidan av texten */
+}
+
+p {
+	font-size: 19px; /* Ökar textstorleken */
+	text-align: left; /* Texten börjar från vänster sida */
+}
+
+img {
+	border-radius: 12px /* Rundade hörn på bilder */
+}
+
+#FlipH { /* Spegla något horisontellt */
+	/*-moz-transform: scale(-1, 1);*/
+	/*-webkit-transform: scale(-1, 1);*/
+	/*-o-transform: scale(-1, 1);*/
+	/*-ms-transform: scale(-1, 1);*/
+	transform: scale(-1, 1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
